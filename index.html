@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="DeJS/sword_9406860.png">
+    <title>  God of War </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="index.js"></script>    
+</head>
+<body>
+
+    <audio>
+        <source src="DeJS/The End Begins(M4A_128K).m4a">
+    </audio>
+
+    <header class="header">
+        <img src="DeJS/HD-wallpaper-god-of-war-2-logo-god-of-war-2-kratos.jpg" alt="" class="header_logo">
+
+        <span id="hamburguer"   class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header_nav">
+           <ul>
+                <li><a href="#"><b>God of war 1</b></a></li>
+                <li><a href="#"><b>God of war 2</b></a></li>
+                <li><a href="#"><b>God of War 3</b></a></li>
+                <li><a href="#"><b>God of War 4</b></a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+    
+    <main class="altura">
+        <img src="DeJS/god-of-war-1-1060x596.jpg" alt="jogo" class="alternativo">
+        
+        <div class="play">
+            <form action="#">
+                <label for="txtPlayer">Nome</label>
+                <input type="text" id="txtPlayer" name="player"><br><br>
+                <label for="txtPass">Senha</label>
+                <input type="password" id="txtPass" name="pass" >
+                
+                
+            </form>
+        </div>
+
+    </main>
+    
+
+   
+    
+   <footer>
+    <img  src="DeJS/linkedin_3536505.png" alt="linkedin" class="icones" >
+    <img src="DeJS/email_552486.png" alt="email" class="icones">
+    <img src="DeJS/whatsapp_2504957.png" alt="whatsapp" class="icones">
+    <img src="DeJS/github_733553.png" alt="github" class="icones">
+    <br>
+    🎮 Elas na tech 🎮
+   </footer>
+
+   
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer(){
+            if(itens_menu.style.display == 'block'){
+                itens_menu.classList.remove('show');
+
+            }else{
+                itens_menu.classList.toggle('show');
+            }
+        }
+
+        (function(){
+            'use strict';
+            var $txtPlayer = document.getElementById('txtPlayer');
+            var $txtPass = document.getElementById('txtPass')
+
+            $txtPlayer.addEventListener('click',function(){
+                if($txtPlayer.value === '' || $txtPass.value === '')
+                    {
+                        alert('Bem Vindo(a)!!!')
+                    }
+
+            })
+
+          
+
+
+
+        })()
+    </script>
+    
+    
+</body>
+</html>
